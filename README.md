@@ -1,26 +1,137 @@
-# 🌾 Crop Prediction Web App
+# 🌱 Crop Prediction Web Application
 
-A machine learning-powered **crop prediction web application** that suggests the most suitable crop based on soil and environmental parameters. Farmers and users can input soil quality and weather values to get accurate crop recommendations.
+A machine learning–based web application built using Flask that predicts the most suitable crop based on soil and environmental conditions.
+
+---
+
+## 📌 Overview
+
+Agriculture productivity depends on soil nutrients and climate conditions. This application uses a trained machine learning model to recommend crops based on user-provided inputs such as soil nutrients, temperature, humidity, pH, and rainfall.
 
 ---
 
 ## 🚀 Features
 
-✔ Predicts best crop for cultivation using a trained ML model  
-✔ Simple and intuitive web interface  
-✔ Runs locally with Python and Flask  
-✔ Takes into account soil properties like N, P, K, pH + weather conditions  
+- Crop prediction using Machine Learning  
+- Flask-based web interface  
+- Pre-trained model loaded with joblib  
+- Label encoding for accurate predictions  
+- Simple and user-friendly UI  
 
 ---
 
-## 🧠 How It Works
+## 🧠 Machine Learning Model
 
-The app uses a pre-trained machine learning model (`crop_prediction_compressed.joblib`) and a label encoder (`label_encoder.joblib`) to:  
-1. Accept inputs from the user (soil & environment).  
-2. Process them with the ML model.  
-3. Return the best crop recommendation based on learned patterns.
+- Model file: `crop_prediction_compressed.joblib`
+- Label encoder: `label_encoder.joblib`
+- Dataset used: `cr2.csv`
+- Algorithm trained using Scikit-Learn
 
 ---
 
-## 🗂 Repository Structure
+## 📂 Project Structure
 
+```text
+Crop-Prediction/
+├── static/
+│   └── image/
+├── templates/
+│   ├── index.html
+│   └── result.html
+├── app.py
+├── cr2.csv
+├── crop_prediction_compressed.joblib
+├── label_encoder.joblib
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Flask
+- Scikit-Learn
+- Joblib
+- Pandas
+- NumPy
+- HTML / CSS
+
+---
+
+## ⚙ Installation
+
+```bash
+git clone https://github.com/kesarwani2509/Crop-Prediction.git
+cd Crop-Prediction
+pip install -r requirements.txt
+```
+
+---
+
+## ▶ Run the Application
+
+```bash
+python app.py
+```
+
+Open browser and visit:
+
+```text
+http://127.0.0.1:5000/
+```
+
+---
+
+## 🧪 Input Parameters
+
+- Nitrogen (N)
+- Phosphorus (P)
+- Potassium (K)
+- Temperature
+- Humidity
+- pH
+- Rainfall
+
+---
+
+## 📊 Output
+
+- Displays the predicted crop based on inputs  
+- Prediction result shown on a separate result page  
+
+---
+
+## 📦 Dependencies
+
+All required libraries are listed in `requirements.txt`.
+
+---
+
+## 🚀 Future Scope
+
+- Cloud deployment  
+- Model accuracy improvement  
+- API integration  
+- Mobile-responsive UI  
+
+---
+
+## 📄 License
+
+No license specified.
+
+---
+
+## ⭐ Acknowledgment
+
+This project is created for educational and practical learning purposes.
+
+---
+
+## 👨‍💻 Author
+
+Kesarwani2509  
+GitHub: https://github.com/kesarwani2509
