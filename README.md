@@ -134,5 +134,5 @@ This project is created for educational and practical learning purposes.
 ## 👨‍💻 Author
 
 Kesarwani2509  
-GitHub: https://github.com/kesarwani2509
-Website: https://crop-prediction-87hr.onrender.com/
+- GitHub: https://github.com/kesarwani2509
+- Website: https://crop-prediction-87hr.onrender.com/
